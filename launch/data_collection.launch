@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <launch>
+  <!-- For intrinsic calibration, the base_frame is the camera pose and the tool_frame is the target pose -->
+  <!-- Pose estimates within .3m of accuracy will be sufficient, and this transform can be provided as a static TF transform -->
   <arg name="base_frame" default="base_link"/>
   <arg name="tool_frame" default="tool0"/>
   <arg name="save_path" default="/tmp/calibration"/>
